@@ -45,26 +45,4 @@ class Handler extends BaseObject
         $this->adapter = $adapter;
     }
 
-    public function save(string $source, string $fileCategory, string $uniqueId): void
-    {
-        $this->processor->save($source, $fileCategory, $uniqueId);
-        return;
-    }
-
-    public function delete(string $location): void 
-    {
-        $this->processor->delete($location);
-        return;
-    }
-
-    public function read(string $location): string
-    {
-        return $this->processor->read($location);
-    }
-
-    public function deleteDirectory(string $location): void
-    {
-        $this->processor->deleteDirectory($location);
-        return;
-    }
 }
