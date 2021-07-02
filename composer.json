@@ -1,10 +1,18 @@
 {
     "name": "tarunjangra/yii2-filehandler",
     "description": "Yii2 file handler for local disk and cdn like (AWS S3, Azure) and process images",
-    "keywords": ["yii2", "file", "handler", "intervention", "images", "imagick", "gd"],
+    "keywords": [
+        "yii2",
+        "file",
+        "handler",
+        "intervention",
+        "images",
+        "imagick",
+        "gd"
+    ],
     "type": "yii2-extension",
     "license": "MIT",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "support": {
         "issues": "https://github.com/tarunjangra/yii2-filehandler/issues",
         "source": "https://github.com/tarunjangra/yii2-filehandler"
@@ -18,8 +26,7 @@
     "require": {
         "php": ">=7.4",
         "yiisoft/yii2": "^2.0.14",
-        "tarunjangra/file-handler": "dev-master"
-
+        "tarunjangra/file-handler": "dev-main"
     },
     "require-dev": {
         "codeception/codeception": "^4.0",
@@ -33,10 +40,14 @@
         "codeception/assert-throws": "^1.1"
     },
     "autoload": {
-        "psr-4": { "yii\\FileSystem\\": "src" }
+        "psr-4": {
+            "yii\\FileSystem\\": "src"
+        }
     },
     "autoload-dev": {
-        "psr-4": { "yiiunit\\FileSystem\\": "tests/"}
+        "psr-4": {
+            "yiiunit\\FileSystem\\": "tests/"
+        }
     },
     "repositories": [
         {
