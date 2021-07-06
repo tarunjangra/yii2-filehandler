@@ -41,6 +41,11 @@ class Handler extends BaseObject
         return $this->_processor->getExtension();
     }
 
+    public function getProcessor(): FileProcessor
+    {
+        return $this->_processor;
+    }
+
     public function getFileName(): string
     {
         return $this->_processor->getFileName();
