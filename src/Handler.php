@@ -28,7 +28,8 @@ class Handler extends BaseObject
         if (!in_array($this->_driver, ['gd', 'imagick'])) {
             throw new \Exception('Invalid image processing drivers. File handler supports gd and imagick');
         }
-        $this->_processor = new FileProcessor($this->_matrix, $this->_adapter, $this->_driver, $this->_preserveOriginalFile);
+        
+        $this->_processor = new FileProcessor($this->_matrix, $this->_adapter, $this->_preserveOriginalFile, $this->_driver);
     }
 
     public function setMatrix(array $matrix): void
